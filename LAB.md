@@ -9,3 +9,17 @@
  ![image](https://cloud.githubusercontent.com/assets/478864/26072382/2249f0c6-3960-11e7-9d7f-d5bc9e283fd3.png)
  
  You should aim to add 5-10 different settings the user can change.
+ 
+ For this assignment:
+ 
+ * You can stick with a single `App` component
+ * Initialize state using `this.state = {}` in the constructor (don't forget to call `super(props)`
+ * Write JSX in the `render` method of the `App` component
+  * Use `this.state.prop` to access state values
+  * Use `e => { this.someMethod(e.target.value) }` (or whatever you need from the event object) to call
+  a method you create on the component that in turn calls `this.setState({ prop: newValue })` to update the value
+  
+  ## Rubric
+  
+  * Works *5pts*
+  * Curiousity/Going Beyond What we did in class *5pts*
