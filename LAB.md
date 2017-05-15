@@ -3,23 +3,26 @@
  
  ## Description
  
- Simple "get started" react assignment. Create a small editor that allows user to set properties 
- and those changes are reflected in the display:
+Simple "get started" react assignment. Use [`create-react-app`](https://github.com/facebookincubator/create-react-app) to get up and running.
  
- ![image](https://cloud.githubusercontent.com/assets/478864/26072382/2249f0c6-3960-11e7-9d7f-d5bc9e283fd3.png)
+Create a small editor that allows user to set properties 
+and those changes are reflected in the display:
  
- You should aim to add 5-10 different settings the user can change.
+![image](https://cloud.githubusercontent.com/assets/478864/26072382/2249f0c6-3960-11e7-9d7f-d5bc9e283fd3.png)
  
- For this assignment:
+You should aim to add 5-10 different settings the user can change.
  
- * You can stick with a single `App` component
- * Initialize state using `this.state = {}` in the constructor (don't forget to call `super(props)`
- * Write JSX in the `render` method of the `App` component
+For this assignment:
+ 
+* You can stick with a single `App` component
+* Initialize state using `this.state = {}` in the constructor (don't forget to call `super(props)`
+* Write JSX in the `render` method of the `App` component
   * Use `this.state.prop` to access state values
   * Use `e => { this.someMethod(e.target.value) }` (or whatever you need from the event object) to call
   a method you create on the component that in turn calls `this.setState({ prop: newValue })` to update the value
   
-  ## Rubric
+## Rubric
   
-  * Works *5pts*
-  * Curiousity/Going Beyond What we did in class *5pts*
+* Works *2.5pts*
+* Curiousity/Going Beyond What we did in class *5pts*
+* Clean-up stuff you didn't use from `create-react-app` default *2.5pts*
