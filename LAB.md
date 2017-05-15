@@ -5,3 +5,5 @@
  
  Simple "get started" react assignment. Create a small editor that allows user to set properties 
  and those changes are reflected in the display:
+ 
+ 
