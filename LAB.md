@@ -6,4 +6,6 @@
  Simple "get started" react assignment. Create a small editor that allows user to set properties 
  and those changes are reflected in the display:
  
+ ![image](https://cloud.githubusercontent.com/assets/478864/26072382/2249f0c6-3960-11e7-9d7f-d5bc9e283fd3.png)
  
+ You should aim to add 5-10 different settings the user can change.
