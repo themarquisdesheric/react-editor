@@ -63,13 +63,13 @@ class App extends Component {
 
         
         <label>Horizontal Center:
-          <input type="number"
+          <input type="range"
                 value={horizontalCenter}
                 onChange={ e => this.changeHorizontalCenter(e.target.value) } />
         </label>
         
         <label>Vertical Center:
-          <input type="number"
+          <input type="range"
                 value={verticalCenter}
                 onChange={ e => this.changeVerticalCenter(e.target.value) } />
         </label>
