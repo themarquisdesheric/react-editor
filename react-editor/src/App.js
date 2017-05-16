@@ -8,12 +8,23 @@ class App extends Component {
 
     this.state = {
       color: '#ff0000',
-      text: ''
+      size: 12,
+      backgroundColor: '#ffffff',
+      text: '',
+
     }
   }
 
   changeColor(color) {
     this.setState({ color });
+  }
+
+  changeSize(size) {
+    this.setState({ size });
+  }
+
+  changeBackgroundColor(backgroundColor) {
+    this.setState({ backgroundColor })
   }
 
   changeText(text) {
@@ -22,28 +33,45 @@ class App extends Component {
 
   render() {
 
-    const { color, text } = this.state;
+    const { color, size, backgroundColor, text } = this.state;
 
     return (
-      <div className="App">
+      <div className="App"
+           style={{ backgroundColor: backgroundColor }}>
         
-      <div className="App-header">
-        <h1>Welcome to React Editor</h1>
-      </div>
+        <div className="App-header">
+          <h1>Welcome to React Editor</h1>
+        </div>
+        
+        <label>Font Color:
+          <input type="color" 
+                value={color}
+                onChange={ e => this.changeColor(e.target.value) } />
+        </label>
 
-      <label>Message: 
-        <input type="text"
-               value={text}
-               onChange={ e => this.changeText(e.target.value) } />
-      </label>
-      <br />
-      <label>Color:
-        <input type="color" 
-               value={color}
-               onChange={ e => this.changeColor(e.target.value) }/>
-      </label>
-      <br />
-      <p style={{ color }}>{text}</p>
+        <label>
+          <input type="color"
+          value={backgroundColor}
+          onChange={ e => this.changeBackgroundColor(e.target.value) } />
+        </label>
+        
+        <label>Size:
+          <input type="range" 
+                value={size}
+                onChange={ e => this.changeSize(e.target.value) } />
+        </label>
+
+        <label>Message: 
+          <input type="text"
+                value={text}
+                onChange={ e => this.changeText(e.target.value) } />
+        </label>
+        
+        <p style={{ color, 
+          fontSize: `${size}px`
+        }}>
+          {text}
+        </p>
       </div>
     );
   }

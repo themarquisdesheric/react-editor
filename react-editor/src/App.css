@@ -1,3 +1,8 @@
-/*.App {
-  text-align: center;
-}*/
+input {
+  margin: 1em 0;
+  display: block;
+}
+
+p {
+  margin-top: 5px;
+}
