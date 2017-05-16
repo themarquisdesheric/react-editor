@@ -8,7 +8,7 @@ class App extends Component {
 
     this.state = {
       color: '#ff0000',
-      size: 12,
+      size: 22,
       backgroundColor: '#ffffff',
       text: '',
 
